@@ -1,0 +1,14 @@
+{
+  "name": "SGP keyshort",
+  "version": "1.0",
+  "manifest_version": 2, 
+  "description": "calculates a supergen password by pressing Ctrl + 1 or Ctrl + 2 to specify domain url",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "background.html"
+    },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "sgp.hash.js", "sgp.core.js", "shortcut.js", "background.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+    } ]
+}
