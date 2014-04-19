@@ -1,5 +1,5 @@
 shortcut.add("Ctrl+Shift+1",function() {
-var content = $(':focus');
+    var content = $(':focus');
 	content.val(gp2_generate_passwd(content.val() + ':' + gp2_process_uri(document.location.hostname, false), 10));
 });
 
