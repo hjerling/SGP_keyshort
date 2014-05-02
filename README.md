@@ -9,15 +9,16 @@ Download the code ether by downloading the zip and unpacking it or by doing a `g
 
 
 ### Known issues 
+
+* The [clippy][1] clipboard copy button does not update if values in the popup page change.
 * Does not work for modal windows on fastmail.fm
 * Does not work on aws account sign on on urls like https://&lt;account id&gt;signin.aws.amazon.com/console/
+
 
 ### Todo
 
 * Fix above issues.
 * Add options menu to set password lenth, salt and hash algoritm. (merge with popup...)
-* Add support for [clippy][1].
-
 
 ### Credits...
 * All of the supergenpass code and popup html from https://github.com/chriszarate/supergenpass/
