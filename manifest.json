@@ -15,7 +15,7 @@
     },
   "content_scripts": [ {
     "js": [ "js/jquery.min.js", "js/sgp.hash.js", "js/sgp.core.js", "js/shortcut.js", "js/background.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
+    "matches": [ "http://*/*", "https://*/*", "file://*/*"]
     } ],
   "web_accessible_resources": ["js/jquery-1.10.2.min.map"],
   "permissions": [
