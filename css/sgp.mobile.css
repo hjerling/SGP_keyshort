@@ -1,0 +1,181 @@
+/* Basic */
+
+body {
+   width: auto;
+   max-width: 320px;
+   min-width:250px;
+   margin: 0 auto;
+   padding: 0;
+   color: #333;
+   background-color: #689;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 16px;
+}
+
+a {
+   text-decoration: none;
+}
+
+h1 {
+   margin: 0;
+   margin-bottom: 10px;
+   font-size: 1.25em;
+}
+
+/* Container */
+
+#main {
+   padding: 25px;
+   background-color: #fff;
+   border-radius: 4px;
+}
+
+/* Canvas */
+
+#Canvas {
+   display: none;
+   position: absolute;
+   top: 11px;
+   right: 10px;
+   width: 16px;
+   height: 16px;
+}
+
+
+/* Form elements */
+
+form {
+   margin: 0;
+}
+
+fieldset {
+   position: relative;
+   margin: 0;
+   margin-top: 10px;
+   padding: 0;
+   border: none;
+}
+
+input {
+   background-color: #fff;
+   border: solid 2px #ccc;
+   border-radius: 4px;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+}
+
+input:focus {
+   outline: none;
+   border-color: #9bc;
+}
+
+label {
+   font-size: 14px;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+/* Placeholders */
+
+label.placeholder {
+   display: none;
+   position: absolute;
+   top: 11px;
+   left: 12px;
+   color: #ccc;
+}
+
+::-webkit-input-placeholder {
+   color: #ccc;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.Missing label { color: #d66; }
+.Missing input::-webkit-input-placeholder { color: #d66; }
+.Missing input { border-color: #d66; }
+
+
+/* Text fields */
+
+#Passwd, #Secret, #Domain {
+   width: 100%;
+   height: 38px;
+   margin: 0;
+   padding: 8px 10px;
+   font-size: 15px;
+}
+
+#Passwd {
+   padding-right: 30px;
+}
+
+#PasswdField, #DomainField {
+   clear: both;
+}
+
+/* Field style for non-input elements */
+
+.Field {
+   height: 16px;
+   margin-top: 10px;
+   padding: 10px 5px;
+   font-size: 16px;
+   text-align: center;
+   border-radius: 4px;
+}
+
+
+/* Buttons */
+
+.Button:active {
+   margin-top: 2px !important;
+   border-bottom: 0 !important;
+}
+
+
+/* Generate button */
+
+#Generate {
+   padding-bottom: 8px;
+   color: #fff;
+   background-color: #356;
+   font-weight: bold;
+   border-bottom: solid 2px #023;
+   cursor: pointer;
+}
+
+#Generate:hover, #Output:hover {
+   color: #fff;
+   background-color: #467;
+   border-bottom: solid 2px #134;
+}
+
+#Generate:active, #Output:active {
+   margin-top: 12px !important;
+}
+
+/* Output field */
+
+#Output, #Mask {
+   display: none;
+   padding-bottom: 8px;
+   color: #fff;
+   background-color: #356;
+   font-weight: bold;
+   border-bottom: solid 2px #023;
+   cursor: pointer;
+}
+
+#Output::selection {
+   background-color: #fff;
+   color: #333;
+}
+

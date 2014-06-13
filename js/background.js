@@ -1,12 +1,14 @@
 shortcut.add("Ctrl+Shift+1",function() {
 	var content = $(':focus');
-	content.val(gp2_generate_passwd(content.val() + ':' + gp2_process_uri(document.location.hostname, false), 10));
+	content.val(supergenpass(content.val(), supergenpass.hostname(document.location.hostname), {}));
 	content.css('background-color','lightgreen');
+	content.css('box-shadow','0 0 10px 0 green inset');
 });
 
 shortcut.add("Ctrl+Shift+2",function() {
 	var content = $(':focus');
 	var domain = prompt("Url:", "ex. google.com");
-	content.val(gp2_generate_passwd(content.val() + ':' + domain, 10));
+	content.val(supergenpass(content.val(), domain, {}));
     content.css('background-color','lightgreen');
+    content.css('box-shadow','0 0 10px 0 green inset');
 });
