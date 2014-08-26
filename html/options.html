@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPG keyshort options</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/sgp.mobile.css">
+</head>
+<body>
+	<div id="options-main">
+		<h1>SGP keyshort options</h1>
+
+		<div class="top-section">
+			<div id="SecretField">
+				<input id="Secret" type="password" placeholder="Secret password">
+				<label for="Secret" class="placeholder">Secret password</label>
+			</div>
+		</div>		
+
+		<div class="bottom-section">
+			<div id="LenField">
+				<input id="Len" type="text" pattern="[0-9]*" value="" maxlength="2">
+				<label id="Down" class="Button">–</label><label id="Up" class="Button">+</label>
+			</div>
+			<div id="MethodField">
+				<input id="MethodSHA512" name="Method" type="radio" value="sha512">
+				<label for="MethodSHA512" class="Button">SHA</label>
+				<input id="MethodMD5" name="Method" type="radio" value="md5">
+				<label for="MethodMD5" class="Button">MD5</label>
+			</div>
+			<div class="clearfix"></div>
+			<div id="status"></div>
+			<div id="Save" class="Field Button">Save</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="../js/options.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-{
+  {
   "name": "SGP keyshort",
   "version": "1.0",
   "manifest_version": 2, 
@@ -13,12 +13,13 @@
     "default_icon": "img/icon128.png",
     "default_popup": "html/popup.html"
     },
+  "options_page": "html/options.html",
   "content_scripts": [ {
     "js": [ "js/jquery-1.11.1.min.js", "js/supergenpass-lib.browser.js", "js/shortcut.js", "js/background.js" ],
     "matches": [ "http://*/*", "https://*/*", "file://*/*"]
     } ],
   "web_accessible_resources": ["js/jquery-1.10.2.min.map"],
   "permissions": [
-    "tabs", "http://*/*", "https://*/*", "file://*/*"
+    "storage", "tabs", "http://*/*", "https://*/*", "file://*/*"
   ]
 }
